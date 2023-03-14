@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox Container</title>
+        <style>
+            html, body {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .box {
+                border: 1px solid black;
+                padding: 20px;
+            }
+
+            .first-box {
+                flex: 3;
+            }
+
+            .second-box {
+                flex: 2;
+            }
+
+            .third-box {
+                flex: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="box first-box">1</div>
+            <div class="box second-box">2</div>
+            <div class="box third-box">3</div>
+        </div>
+    </body>
+</html>

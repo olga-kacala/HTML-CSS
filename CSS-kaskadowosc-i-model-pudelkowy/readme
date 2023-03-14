@@ -1,0 +1,24 @@
+Ćwiczenie z kaskadowosci:
+
+1. utwóż liste ul zawierajaca 4 elementy li
+2. kazdemu li listy nadaj kolor czerwony
+3. drugiemu, 3mu i 4mu elementowi listy nadaj kolor niebieski poprzez dodanie dodatkowej klasy
+4. trzeciemu elementowi nadaj kolor zielony poprzez uzycie na nim dodatkowo selektora ID
+5. nastepnie ponownie trzeciemu elementowi nadaj kolor pomarańczowy poprzez style inline
+6. a teraz zastosuj w klasie, przy właściwości wybranego koloru słowo "!important" aby nadpisać wybrany kolor
+
+
+Ćwiczenie z box model:
+
+1. utwórz czerwony kwadrat o wielkosci 100px posiadajacy:
+- czarne obramowanie 3px
+- zaokrąglone 1 i 3 róg na 10px
+- wewnetrzyny margines (padding) 15px
+- zawnetrzny margines: 10px;
+2. Ustaw trzy takie kwadraty jeden pod drugim
+3. Stosując zasadę specyficznosci, utwórz nową klasę,
+ustawiającą kolejne utworzone 3 takie same kwadraty w jedynm rządzie
+/w sumie będzie na ekranie 6 kwadratów/
+4. W pierwszym kwadracie wstaw po środku żółty
+okrągły element o wielkosci 30px
+5. dodaj odpowiednią właściwość do elementu, aby posiadał całkowitą szerokość 100 pikseli

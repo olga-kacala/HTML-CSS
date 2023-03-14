@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.grid-fit-container {
+  margin-bottom: 40px;
+}
+
+article {
+  background: gray;
+  height: 150px;
+  padding: 20px;
+  border-radius: 6px;
+}

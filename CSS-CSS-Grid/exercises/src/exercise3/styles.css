@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.grid-container {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns:[page-start aside-start] 13% [aside-content] 87%;[contentend pageend]
+  grid-template-rows:[p-start n-start] 100px[n-end c-start] 1fr[c-end f-start] 70px[f-end p-end];
+}
+
+.nav {
+  background: blue;
+  grid-column: p-start/ p-end;
+  grid-row: n-start / n-end;
+}
+
+.aside {
+  background: gray;
+  grid-column: a-start / a-end;
+  grid-row: c-start / c-start;
+}
+
+.main {
+  background: seagreen;
+  grid-column: c-start / c-end;
+  grid-row: c-start/ c-end;
+}
+
+.footer {
+  background: yellow;
+  grid-column: p-start / p-end;
+  grid-row: f-start / f-end;
+}

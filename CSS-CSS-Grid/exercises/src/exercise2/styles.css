@@ -1,0 +1,44 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 50% 15% 10%;
+  grid-template-rows: repeat(2, 100px);
+}
+
+div {
+  min-height: 10px;
+  min-width: 10px;
+}
+
+.div1 {
+  background-color: red;
+}
+
+.div2 {
+  background-color: blue;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.div3 {
+  background-color: violet;
+}
+
+.div4 {
+  background-color: green;
+}
+
+.div5 {
+  background-color: yellow;
+}
+
+.div6 {
+  background-color: rosybrown;
+}
+
+.div7 {
+  background-color: fuchsia;
+}
+
+.div8 {
+  background-color: peru;
+}

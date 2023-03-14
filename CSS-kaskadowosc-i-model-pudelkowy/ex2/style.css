@@ -1,0 +1,32 @@
+.element {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 10px 0 10px 0;
+  padding: 15px;
+  margin: 10px;
+  background: red;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.display-inline {
+  display: inline-block;
+  background: url('https://www.travelmanagers.com.au/wp-content/uploads/2012/08/AdobeStock_254529936_Railroad-to-Denali-National-Park-Alaska_750x500.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.kolo {
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* margin: calc( 50% - 15px ); */
+}

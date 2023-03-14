@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  border: 1px solid grey;
+  gap: 20px;
+}
+
+.container:nth-of-type(2) {
+  flex-direction: column;
+  align-items: center;
+}
+
+.switcher {
+  height: 36px;
+  width: 60px;
+  cursor: pointer;
+  background: #000000;
+  border-radius: 50px;
+  position: relative;
+  appearance: none;
+  /* transform: scale(1);
+  transition: 1s ease; */
+}
+
+.switcher::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 13px);
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background: linear-gradient(to right, orange, fuchsia);
+  transform: translate(5px);
+  opacity: 0.5;
+  transition: .4s;
+}
+
+/* .switcher:hover {
+  transform: scale(1.3) rotate(360deg);
+} */
+
+.switcher:checked::after {
+  transform: translateX(30px);
+  opacity: 1;
+}
+
+.switcher:checked ~ .header {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  background-image: url('https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg');
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 3px #000;
+  opacity: 0.2;
+  /* transform: translateY(60px); */
+  animation: enteringTitle 1s linear 1 forwards;
+  transition: .5s;
+}
+
+/* .header:hover .title {
+  opacity: 1;
+  transform: translateY(-30px) scale(1.3);
+} */
+
+@keyframes enteringTitle {
+  0% { transform: translateY(80px); }
+  100% { transform: translateY(-30px) scale(1.3); opacity: 1; }
+}
+
+.movable {
+  width: 100px;
+  height: 100px;
+  background: gold;
+  border: 10px solid orange;
+  border-radius: 50%;
+  text-align: center;
+  animation: mojaAnimacja 2s linear 2 alternate;
+}
+
+@keyframes mojaAnimacja {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(200px, 0) rotate(360deg) }
+  100% { transform: translate(200px, 200px) rotate(720deg) }
+}
+
+/* loader spinner */
+
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000CC; */
+  /* z-index:2; */
+}
+
+.loader::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: dodgerblue transparent fuchsia transparent;
+  animation: loading-spinner 1.4s linear infinite;
+/*   infinite - w nieskończoność */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes loading-spinner {
+  from { transform: rotate(0deg)}
+  to { transform: rotate(360deg)}
+}

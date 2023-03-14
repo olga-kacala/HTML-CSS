@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.column-box {
+    border: 3px solid dodgerblue;
+    padding: 20px;
+}
+
+.grid-boxes-container {
+    display: grid;
+    padding: 20px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 300px 80px;
+    grid-template-areas:
+        'h h h'
+        'c c m'
+        'f f m'
+}
+
+.h-class {
+    grid-area: h;
+}
+
+.c-class {
+    grid-area: c;
+}
+
+.m-class {
+    grid-area: m;
+}
+
+.f-class {
+    grid-area: f;
+}

@@ -1,0 +1,42 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  padding: 50px 20px;
+  border: 1px solid grey;
+  gap: 10px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  background: blue;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.square:hover {
+  background: skyblue;
+  transform: scale(1.2);
+}
+
+.square:nth-of-type(2) {
+  background: red;
+}
+
+.square:nth-of-type(2):hover {
+  transform: rotate(360deg);
+}
+
+.square:nth-of-type(3) {
+  background: gold;
+}
+
+.square:nth-of-type(3):hover {
+  transform: translate(30px, 30px);
+}

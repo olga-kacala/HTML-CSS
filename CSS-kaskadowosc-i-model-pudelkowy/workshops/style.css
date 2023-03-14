@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+
+/* .container h1 {
+  color: orange;
+} */
+
+h1.my-class {
+  color: inherit;
+}
+
+#my-id {
+  color: aqua;
+}
+
+.container {
+  color: brown;
+}
+
+section {
+  padding: 20px;
+  border: 1px solid grey;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: limegreen;
+  padding: 15px 0 70px 0px;
+  border: 10px solid black;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: gold;
+  border: 10px solid orange;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  /* background: blue; */
+  border-top: 40px solid transparent;
+  border-left: 70px solid crimson;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+
+nav {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.item {
+  border: 1px solid dodgerblue;
+  padding: 5px 10px;
+  display: inline-block;
+}

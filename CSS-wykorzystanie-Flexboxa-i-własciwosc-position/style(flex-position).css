@@ -1,0 +1,19 @@
+.flex-section
+{
+    border: 2px solid red;
+    display: flex;
+    justify-content:space-around;
+}
+.square
+{
+    height: 300px;
+    width: 300px;
+    background-color:hotpink ;
+    border: 2px solid black;
+}
+.square-row
+{
+    dispaly:flex;
+    border:7px solid green;
+    justify-content: :space-between;
+}

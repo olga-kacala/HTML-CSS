@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.grid-container {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: [page-start aside-start] 13% [aside-end content-start] 87% [content-end page-end];
+  grid-template-rows: [page-start nav-start] 100px [nav-end content-start] 1fr [content-end footer-start] 70px [footer-end page-end];
+  grid-template-areas:"nav nav"
+                       "aside content"
+                       "fotter fotter"       ;
+}
+
+.nav {
+  background: blue;
+  grid-area: nav;
+  
+}
+
+.aside {
+  background: gray;
+  grid-area: aside;
+}
+
+.main {
+  background: seagreen;
+  grid-area:main;
+}
+
+.footer {
+  background: yellow;
+  grid-area:fotter;
+}
